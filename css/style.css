@@ -1,0 +1,148 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+.container {
+    width: 50vw;
+    height: 50vh;
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    margin-top: 50px;
+
+    position: relative;
+}
+
+.carousel {
+
+    width: 80%;
+    height: 100%
+}
+
+.item {
+
+    width: 100%;
+    height: 100%;
+    display: none;
+
+}
+
+.show {
+
+    display: block;
+}
+
+.up , .down {
+
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.button-down {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    bottom: 25px;
+    left: 90%;
+    transform: translateX(-50%);
+
+
+}
+
+.button-up {
+
+    width: 50px;
+    height: 50px;
+    position: absolute;
+
+    top: 25px;
+    left: 90%;
+    transform: translateX(-50%);
+
+    
+}
+
+.button-down i, .button-up i  {
+
+    pointer-events: none;
+
+    
+}
+
+
+.fa-angle-down {
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+.fa-angle-up {
+
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+}
+
+.buttons {
+
+    height: 100%;
+    padding: 10px 20px;
+    
+}
+
+.thumbmail {
+
+    height: 10vh;
+    width: 100%;
+    display: block;
+    background-size: cover;
+    border: none;
+    cursor:pointer;
+
+    opacity: 50%;
+   
+}
+
+.button-up
+
+.btn-thumb {
+
+    height: 10vh;
+    width: 100%;
+}
+
+a {
+    width: 100%;
+}
+
+.thumb {
+
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20%;
+   
+}
+
+.selected {
+
+    border: white 2px solid;
+    opacity: 100%;
+}
