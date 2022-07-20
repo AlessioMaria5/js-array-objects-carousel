@@ -131,8 +131,6 @@ const thumb = document.querySelector('.thumb');
     }
     );
 
-
-
     for(let i = 0 ; i < images.length ; i++) {
 
         thumb.innerHTML += 
@@ -140,74 +138,22 @@ const thumb = document.querySelector('.thumb');
         ;
     }
 
-    // const activeThumb = document.querySelector('.thumbmail')[thumbmailIn];
-
     let thumbmailIn = document.querySelectorAll('.thumbmail');
     console.log(thumbmailIn);
 
-    thumbmailIn[0].addEventListener('click', 
+for(let i = 0; i<5 ; i++){
+
+    thumbmailIn[i].addEventListener('click', 
     function(){
 
         thumbmailIn[itemNumber].classList.remove('selected')
-        thumbmailIn[0].classList.add('selected')
+        thumbmailIn[i].classList.add('selected')
         active[itemNumber].classList.remove('show');
         innerTitle[itemNumber].classList.remove('show');
-        itemNumber = 0
+        itemNumber = i
         innerTitle[itemNumber].classList.add('show');
-        active[0].classList.add('show')
+        active[i].classList.add('show')
                 
     }         
     );
-
-    thumbmailIn[1].addEventListener('click', 
-    function(){
-
-        thumbmailIn[itemNumber].classList.remove('selected')
-        thumbmailIn[1].classList.add('selected')
-        active[itemNumber].classList.remove('show');
-        innerTitle[itemNumber].classList.remove('show');
-        itemNumber = 1
-        innerTitle[itemNumber].classList.add('show');
-        active[1].classList.add('show')
-       
-    }         
-    );
-
-    thumbmailIn[2].addEventListener('click', 
-    function(){
-
-        thumbmailIn[itemNumber].classList.remove('selected')
-        thumbmailIn[2].classList.add('selected')
-        active[itemNumber].classList.remove('show');
-        innerTitle[itemNumber].classList.remove('show');
-        itemNumber = 2
-        innerTitle[itemNumber].classList.add('show');
-        active[2].classList.add('show')
-    }   
-    );
-
-    thumbmailIn[3].addEventListener('click', 
-    function(){
-
-        thumbmailIn[itemNumber].classList.remove('selected')
-        thumbmailIn[3].classList.add('selected')
-        active[itemNumber].classList.remove('show');
-        innerTitle[itemNumber].classList.remove('show');
-        itemNumber = 3
-        innerTitle[itemNumber].classList.add('show');
-        active[3].classList.add('show')
-    }         
-    );
-
-    thumbmailIn[4].addEventListener('click', 
-    function(){
-
-        thumbmailIn[itemNumber].classList.remove('selected')
-        thumbmailIn[4].classList.add('selected')
-        active[itemNumber].classList.remove('show');
-        innerTitle[itemNumber].classList.remove('show');
-        itemNumber = 4
-        innerTitle[itemNumber].classList.add('show');
-        active[4].classList.add('show')
-    }         
-    );
+}
