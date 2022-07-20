@@ -9,7 +9,7 @@
 
 
 .container {
-    width: 50vw;
+    width: 1040px;
     height: 50vh;
     background-color: rgb(0, 0, 0);
     margin: auto;
@@ -20,22 +20,23 @@
 
 .carousel {
 
-    width: 80%;
-    height: 100%
+    width: 100%;
+    height: 80%;
+    position: absolute;
+
 }
+
 
 .item {
 
     width: 100%;
     height: 100%;
     display: none;
+    object-fit: cover;
 
 }
 
-.show {
 
-    display: block;
-}
 
 .up , .down {
 
@@ -54,8 +55,8 @@
     position: absolute;
 
     bottom: 25px;
-    left: 90%;
-    transform: translateX(-50%);
+    left: 95%;
+    transform: translateX(-50%) rotate(270deg);
 
 
 }
@@ -66,9 +67,9 @@
     height: 50px;
     position: absolute;
 
-    top: 25px;
-    left: 90%;
-    transform: translateX(-50%);
+    bottom: 25px;
+    right: 90%;
+    transform: translateX(-50%) rotate(270deg);
 
     
 }
@@ -99,7 +100,7 @@
 
 .buttons {
 
-    height: 100%;
+    /* height: 100%; */
     padding: 10px 20px;
     
 }
@@ -117,8 +118,6 @@
    
 }
 
-.button-up
-
 .btn-thumb {
 
     height: 10vh;
@@ -132,12 +131,12 @@ a {
 .thumb {
 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
     position: absolute;
-    top: 0;
-    right: 0;
-    width: 20%;
+    top: 80%;
+    height: 100%;
+    width: 100%;
    
 }
 
@@ -145,4 +144,24 @@ a {
 
     border: white 2px solid;
     opacity: 100%;
+}
+
+.innerTitle {
+
+    color: white;
+    text-shadow: 5px 5px 5px black;
+    margin: 10px 10px 20px 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: end;
+    display: none;
+    font-size: 1em;
+
+    padding: 20px;
+}
+
+.show {
+    
+    display: block;
 }
